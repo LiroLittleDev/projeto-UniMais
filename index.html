@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniMais</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo-transparente-cut.png" alt="Logo UniMais" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto w-100 justify-content-center justify-content-lg-end text-center">
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-2 mt-2 mt-lg-0" href="loginpage.html">Login</a></li>
+          <li class="nav-item">
+            <a class="btn btn-outline-warning ms-lg-2 mt-2 mt-lg-0" href="#inscricao">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container text-center"></div>
+      <img src="images/Mais conecimento. Mais futuro.png" alt="Imagem destaque UniMais" id="hero-image" class="img-fluid">
+      <h1>Conectando universidades com pessoas<br> através de eventos acadêmicos.</h1>
+      <p>Participe dos melhores eventos acadêmicos e expanda seus horizontes.</p>
+      <a href="#eventos" class="btn btn-primary btn-lg">Saiba mais</a>
+    </div>
+  </section>
+
+  <section class="features text-center" id="promocoes-ind">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-icon">
+            <img src="images/icones/icon-netacad.png" alt="Networking" class="img-fluid">
+          </div>
+          <h4>Networking Acadêmico</h4>
+          <p>Participe de eventos que ampliam sua rede de contatos.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon">
+            <img src="images/icones/icon-eventacad.png" alt="Eventos Enriquecedores" class="img-fluid">
+          </div>
+          <h4>Eventos Enriquecedores</h4>
+          <p>Aprenda com especialistas de diferentes áreas do conhecimento.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon">
+            <img src="images/icones/icon-certifiacad.png" alt="Certificados Reconhecidos" class="img-fluid">
+          </div>
+          <h4>Certificados Reconhecidos</h4>
+          <p>Ganhe certificados que valorizam sua carreira acadêmica e profissional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos py-5 bg-light" id="depoimentos">
+    <div class="container">
+      <h2 class="mb-5 fw-bold text-primary text-center">O que dizem sobre nós</h2>
+      <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="card h-100 shadow border-0" style="max-width: 600px; width: 100%;">
+                <div class="card-body text-center">
+                  <div class="d-flex flex-column align-items-center mb-3">
+                    <img src="images/depoimentos/mariana-depo.jpg" alt="Mariana" class="rounded-circle mb-2" width="70" height="70">
+                    <h5 class="mb-0">Mariana</h5>
+                    <small class="text-muted">Estudante de Engenharia</small>
+                  </div>
+                  <blockquote class="blockquote mb-0">
+                    <p class="fs-5 fst-italic">“A UniMais abriu portas para minha carreira. Graças aos eventos, conquistei meu primeiro estágio e fiz amizades valiosas.”</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card h-100 shadow border-0" style="max-width: 600px; width: 100%;">
+                <div class="card-body text-center">
+                  <div class="d-flex flex-column align-items-center mb-3">
+                    <img src="images/depoimentos/carlos-depo.jpg" alt="Carlos" class="rounded-circle mb-2" width="70" height="70">
+                    <h5 class="mb-0">Carlos</h5>
+                    <small class="text-muted">Aluno de Sistemas</small>
+                  </div>
+                  <blockquote class="blockquote mb-0">
+                    <p class="fs-5 fst-italic">“As palestras e workshops foram transformadores. Aprendi com profissionais renomados e ampliei muito minha rede de contatos.”</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card h-100 shadow border-0" style="max-width: 600px; width: 100%;">
+                <div class="card-body text-center">
+                  <div class="d-flex flex-column align-items-center mb-3">
+                    <img src="images/depoimentos/juliana-depo.jpg" alt="Juliana" class="rounded-circle mb-2" width="70" height="70">
+                    <h5 class="mb-0">Juliana</h5>
+                    <small class="text-muted">Recém-formada</small>
+                  </div>
+                  <blockquote class="blockquote mb-0">
+                    <p class="fs-5 fst-italic">“Os certificados da UniMais foram reconhecidos no mercado e fizeram diferença no meu currículo. Recomendo a todos!”</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="parceiros text-center" id="parceiros">
+    <div class="container">
+      <h2>Universidades Parceiras</h2>
+      <div class="row mt-4 justify-content-center align-items-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="parceiro-logo mb-2">
+            <img src="images/universidades/ufam.png" alt="UFAM" class="img-fluid parceiro-img">
+          </div>
+            <div>Universidade Federal do Amazonas (UFAM)</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="parceiro-logo mb-2">
+            <img src="images/universidades/fametro.png" alt="Fametro" class="img-fluid parceiro-img">
+            </div>
+            <div>Centro Universitário Fametro</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="parceiro-logo mb-2">
+            <img src="images/universidades/uninorte.png" alt="UniNorte" class="img-fluid parceiro-img">
+            </div>
+            <div>Centro Universitário do Norte (UniNorte)</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="parceiro-logo mb-2">
+            <img src="images/universidades/esbam.jpeg" alt="ESBAM" class="img-fluid parceiro-img">
+            </div>
+            <div>Escola Superior Batista do Amazonas (ESBAM)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="inscricao py-5 bg-light" id="inscricao">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Inscreva-se agora</h2>
+      <form id="formInscricao" class="mx-auto" style="max-width: 600px;">
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label for="nomeCompleto" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="instituicao" class="form-label">Instituição de Ensino</label>
+          <input type="text" class="form-control" id="instituicao" placeholder="Digite sua instituição" required>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Enviar inscrição</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white pt-4 pb-3 mt-5">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-md-start text-center mb-2 mb-md-0">
+          <img src="images/logo-transparente-cut.png" alt="Logo UniMais" height="36" class="mb-2">
+          <div>
+            <small>Conectando universidades, pessoas e conhecimento.</small>
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-2 mb-md-0">
+          <h6 class="fw-bold mb-2">Links Rápidos</h6>
+          <a href="sobre.html" class="text-white text-decoration-none me-3">Sobre</a>
+          <a href="eventos.html" class="text-white text-decoration-none me-3">Eventos</a>
+          <a href="parceiros.html" class="text-white text-decoration-none">Parceiros</a>
+        </div>
+        <div class="col-md-4 text-md-end text-center">
+          <h6 class="fw-bold mb-2">Fale Conosco</h6>
+          <a href="mailto:contato@unimais.com" class="text-white text-decoration-none d-block mb-1">
+            contato@unimais.com
+          </a>
+          <div class="d-flex justify-content-md-end justify-content-center gap-2">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light my-3">
+      <div class="text-center small">
+        &copy; 2025 UniMais. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,10 +1,14 @@
-    document.getElementById('formInscricao').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Inscrição enviada com sucesso! Em breve entraremos em contato.');
-      this.reset();
-    });
+function enviarFormularioInscricao(e) {
+  e.preventDefault();
+  const nome = encodeURIComponent(document.getElementById('nomeCompleto').value);
+  const email = encodeURIComponent(document.getElementById('email').value);
+  const instituicao = encodeURIComponent(document.getElementById('instituicao').value);
+  window.location.href = `cadastro.html?nome=${nome}&email=${email}&instituicao=${instituicao}`;
+}
 
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Login enviado! Em breve redirecionaremos.');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  const formInscricao = document.getElementById('formInscricao');
+  if (formInscricao) {
+    formInscricao.addEventListener('submit', enviarFormularioInscricao);
+  }
+});

@@ -22,7 +22,7 @@
           <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
           <li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
-          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-2 mt-2 mt-lg-0" href="loginpage.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-2 mt-2 mt-lg-0" href="login.html">Login</a></li>
           <li class="nav-item">
             <a class="btn btn-outline-warning ms-lg-2 mt-2 mt-lg-0" href="#inscricao">Inscreva-se</a>
           </li>
@@ -173,23 +173,32 @@
         <div class="row g-3 mb-3">
           <div class="col-md-6">
             <label for="nomeCompleto" class="form-label">Nome completo</label>
-            <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome" required>
+            <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome" required>
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
           </div>
         </div>
         <div class="mb-3">
           <label for="instituicao" class="form-label">Instituição de Ensino</label>
-          <input type="text" class="form-control" id="instituicao" placeholder="Digite sua instituição" required>
+          <select class="form-select" id="instituicao" name="instituicao" required>
+            <option value="" disabled selected>Selecione sua instituição</option>
+            <option value="Universidade Federal do Amazonas (UFAM)">Universidade Federal do Amazonas (UFAM)</option>
+            <option value="Centro Universitário Fametro">Centro Universitário Fametro</option>
+            <option value="Centro Universitário do Norte (UniNorte)">Centro Universitário do Norte (UniNorte)</option>
+            <option value="Escola Superior Batista do Amazonas (ESBAM)">Escola Superior Batista do Amazonas (ESBAM)</option>
+          </select>
         </div>
         <div class="d-grid">
-          <button type="submit" class="btn btn-primary btn-lg">Enviar inscrição</button>
+            <button type="submit" class="btn btn-primary btn-lg" onclick="enviarFormularioInscricao(event)">Enviar inscrição</button>
         </div>
       </form>
     </div>
   </section>
+  <script>
+
+  </script>
 
   <footer class="bg-primary text-white pt-4 pb-3 mt-5">
     <div class="container">

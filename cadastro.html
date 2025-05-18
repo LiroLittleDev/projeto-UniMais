@@ -8,97 +8,108 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo-transparente-cut.png" alt="Logo UniMais" height="40">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo-transparente-cut.png" alt="Logo UniMais" height="38" class="me-2">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavCadastro">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto w-100 justify-content-center justify-content-lg-end text-center">
-       <li class="nav-item"><a class="btn btn-link nav-link px-3 py-2 text-primary fw-semibold rounded-pill" href="eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="btn btn-link nav-link px-3 py-2 text-primary fw-semibold rounded-pill" href="parceiros.html">Parceiros</a></li>
-            <li class="nav-item"><a class="btn btn-link nav-link px-3 py-2 text-primary fw-semibold rounded-pill" href="sobre.html">Sobre</a></li>
-          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-2 mt-2 mt-lg-0" href="loginpage.html">Login</a></li>
+      <div class="collapse navbar-collapse" id="navbarNavCadastro">
+        <ul class="navbar-nav ms-auto align-items-center gap-2">
+          <li class="nav-item">
+            <a class="btn btn-outline-primary d-flex align-items-center gap-2 px-4 py-2 fw-semibold shadow-sm rounded-pill" href="index.html" style="font-size: 1rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+              </svg>
+              Voltar ao Menu Principal
+            </a>
+          </li>
+          <li class="nav-item"><a class="btn btn-link nav-link px-3 py-2 text-primary fw-semibold rounded-pill" href="eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="btn btn-link nav-link px-3 py-2 text-primary fw-semibold rounded-pill" href="parceiros.html">Parceiros</a></li>
+          <li class="nav-item"><a class="btn btn-link nav-link px-3 py-2 text-primary fw-semibold rounded-pill" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-2 mt-2 mt-lg-0" href="login.html">Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<main class="py-5">
-    <div class="container">
-        <div class="login-card">
-            <h2 class="mb-4">Primeiro Acesso</h2>
-            <form id="cadastroForm">
-                <div class="mb-3">
-                    <label for="nomeCompleto" class="form-label">Nome completo</label>
-                    <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="cpf" class="form-label">CPF</label>
-                    <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" placeholder="Ex: 123.456.789-10" required>
-                </div>
-                <div class="mb-3">
-                    <label for="instituicao" class="form-label">Instituição de Ensino</label>
-                    <select class="form-select" id="instituicao" name="instituicao" required>
-                        <option value="" disabled selected>Selecione sua instituição</option>
-                        <option value="Universidade Federal do Amazonas (UFAM)">Universidade Federal do Amazonas (UFAM)</option>
-                        <option value="Centro Universitário Fametro">Centro Universitário Fametro</option>
-                        <option value="Centro Universitário do Norte (UniNorte)">Centro Universitário do Norte (UniNorte)</option>
-                        <option value="Escola Superior Batista do Amazonas (ESBAM)">Escola Superior Batista do Amazonas (ESBAM)</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="curso" class="form-label">Curso</label>
-                    <select class="form-select" id="curso" name="curso" required>
-                        <option value="" disabled selected>Selecione seu curso</option>
-                        <option value="Administração">Administração</option>
-                        <option value="Direito">Direito</option>
-                        <option value="Engenharia Civil">Engenharia Civil</option>
-                        <option value="Engenharia de Produção">Engenharia de Produção</option>
-                        <option value="Engenharia Elétrica">Engenharia Elétrica</option>
-                        <option value="Medicina">Medicina</option>
-                        <option value="Odontologia">Odontologia</option>
-                        <option value="Pedagogia">Pedagogia</option>
-                        <option value="Psicologia">Psicologia</option>
-                        <option value="Sistemas de Informação">Sistemas de Informação</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" pattern="\d{10,11}" placeholder="Apenas números, ex: 92999999999" inputmode="numeric" required>
-                </div>
-                <div class="mb-3">
-                    <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="senha" name="senha" minlength="6" required>
-                </div>
-                <div class="mb-3">
-                    <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
-                    <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" minlength="6" required>
-                    <div id="senhaErro" class="text-danger mt-1" style="display:none;">As senhas não coincidem.</div>
-                </div>
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="termos" name="termos" required>
-                    <label class="form-check-label" for="termos">
-                        Aceito os <a href="#">termos de uso</a>
-                    </label>
-                </div>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary btn-lg">Finalizar Cadastro</button>
-                </div>
-            </form>
-            <div id="mensagemCadastro" class="text-success text-center mt-3" style="display:none;"></div>
-        </div>
+  <div class="login-card shadow-lg border-0 rounded-5 p-5 w-100" style="max-width: 430px; background: linear-gradient(120deg, #e3f2fd 60%, #bbdefb 100%);">
+    <div class="text-center mb-4">
+      <img src="images/logo-transparente-cut.png" alt="Logo UniMais" height="48" class="mb-2">
+      <h2 class="fw-bold" style="color:#0d47a1; letter-spacing:1px;">Primeiro Acesso</h2>
+      <p class="text-secondary small mb-0">Preencha os campos para criar sua conta</p>
     </div>
-</main>
+    <form id="cadastroForm" autocomplete="off">
+      <div class="mb-3">
+        <label for="nomeCompleto" class="form-label">Nome completo</label>
+        <input type="text" class="form-control form-control-lg rounded-4" id="nomeCompleto" name="nomeCompleto" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control form-control-lg rounded-4" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF</label>
+        <input type="text" class="form-control form-control-lg rounded-4" id="cpf" name="cpf" maxlength="14" placeholder="Ex: 123.456.789-10" required>
+      </div>
+      <div class="row g-2">
+        <div class="col-12 col-md-6 mb-3">
+          <label for="instituicao" class="form-label">Instituição</label>
+          <select class="form-select form-select-lg rounded-4" id="instituicao" name="instituicao" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="Universidade Federal do Amazonas (UFAM)">UFAM</option>
+            <option value="Centro Universitário Fametro">Fametro</option>
+            <option value="Centro Universitário do Norte (UniNorte)">UniNorte</option>
+            <option value="Escola Superior Batista do Amazonas (ESBAM)">ESBAM</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="curso" class="form-label">Curso</label>
+          <select class="form-select form-select-lg rounded-4" id="curso" name="curso" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="Administração">Administração</option>
+            <option value="Direito">Direito</option>
+            <option value="Engenharia Civil">Engenharia Civil</option>
+            <option value="Engenharia de Produção">Engenharia de Produção</option>
+            <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+            <option value="Medicina">Medicina</option>
+            <option value="Odontologia">Odontologia</option>
+            <option value="Pedagogia">Pedagogia</option>
+            <option value="Psicologia">Psicologia</option>
+            <option value="Sistemas de Informação">Sistemas de Informação</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" class="form-control form-control-lg rounded-4" id="telefone" name="telefone" maxlength="15" placeholder="Ex: (00) 0 0000-0000" inputmode="numeric" required oninput="formatarTelefone(this)">
+        <div class="form-text">Informe um número de telefone válido com DDD.</div>
+      </div>
+      <div class="row g-2">
+        <div class="col-12 col-md-6 mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control form-control-lg rounded-4" id="senha" name="senha" minlength="6" required>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
+          <input type="password" class="form-control form-control-lg rounded-4" id="confirmarSenha" name="confirmarSenha" minlength="6" required>
+          <div id="senhaErro" class="text-danger mt-1 small" style="display:none;">As senhas não coincidem.</div>
+        </div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="termos" name="termos" required>
+        <label class="form-check-label small" for="termos">
+          Aceito os <a href="#" class="text-primary text-decoration-underline">termos de uso</a>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill shadow">Finalizar Cadastro</button>
+      <p class="text-center text-muted mt-3 mb-0">Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </form>
+    <div id="mensagemCadastro" class="text-success text-center mt-3" style="display:none;"></div>
+  </div>
 
   <footer class="bg-primary text-white pt-4 pb-3 mt-5">
     <div class="container">
@@ -133,10 +144,9 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/cadastro.js"></script>
-
 </body>
 </html>
